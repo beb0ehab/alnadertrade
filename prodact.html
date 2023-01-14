@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Imported Products</title>
+    <style>
+      /* CSS styles for the page */
+      .product {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .product img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 25px;
+        margin-right: 20px;
+      }
+      .product h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      #product1:hover {
+        filter: brightness(80%);
+        cursor:pointer;
+    }
+    </style>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+  <body>
+    <div id="page-wrapper">
+
+        <!-- Header -->
+            <header id="header" class="alt">
+                <h1><a href="index.html">Solid State</a></h1>
+                <nav>
+                    <a href="#menu">Menu</a>
+                </nav>
+            </header>
+
+        <!-- Menu -->
+            <nav id="menu">
+                <div class="inner">
+                    <h2>Menu</h2>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="generic.html">SERVICES</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                        <li><a href="prodact.html">product</a></li>
+                    </ul>
+                    <a href="#" class="close">Close</a>
+                </div>
+            </nav>
+
+        <!-- Wrapper -->
+    <h1>Imported Products</h1>
+    <div class="product">
+        <img src="images/pic01.jpg" alt="Product 1" id="product1">
+        <div>
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor dapibus risus, non tincidunt urna congue id.</p>
+        </div>
+        <div class="product">
+            <img src="images/pic02.jpg" alt="Product 1" id="product1">
+            <div>
+                <h3>Product 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor dapibus risus, non tincidunt urna congue id.</p>
+            </div>
+            <div class="product">
+                <img src="images/pic03.jpg" alt="Product 1" id="product1">
+                <div>
+                    <h3>Product 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor dapibus risus, non tincidunt urna congue id.</p>
+                </div>
+        
+   
+        <div class="product">
+            <img src="images/pic04.jpg" alt="Product 1" id="product1">
+            <div>
+                <h3>Product 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor dapibus risus, non tincidunt urna congue id.</p>
+            </div>
+    </div>
+    <script>
+        document.getElementById("product1").addEventListener("mouseover", function(){
+        this.style.filter = "brightness(120%)";
+    });
+    
+    document.getElementById("product1").addEventListener("mouseout", function(){
+        this.style.filter = "brightness(100%)";
+    });
+    
+    </script>
+    <!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+  </body>
+</html>
